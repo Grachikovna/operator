@@ -65,6 +65,7 @@ public class Main {
             System.out.println("two максимум ");
         } else {
             System.out.println("three максимум ");
+
         }
 
     }
