@@ -63,9 +63,7 @@ public class Main {
             System.out.println("one максимум ");
         } else if (two > three) {
             System.out.println("two максимум ");
-        } else {
             System.out.println("three максимум ");
-
         }
 
     }
