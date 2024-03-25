@@ -27,11 +27,11 @@ public class Main {
         age = 19;
         if (age >= 2 && age <= 6) {
             System.out.println("Если возраст человека равен " + age + "то ему нужно ходить в садик ");
-        } else if (age <= 17) {
+        } else if (age >= 7 && age <= 17) {
             System.out.println("Если возраст человека равен " + age + "то ему нужно ходить в школу ");
-        } else if (age <= 24) {
+        } else if (age >= 18 && age <= 24) {
             System.out.println("Если возраст человека равен " + age + "то ему нужно ходить в универ ");
-        } else {
+        } else if (age >= 25) {
             System.out.println("Если возраст человека равен " + age + " то ему нужно ходить на работу ");
         }
 
@@ -47,9 +47,11 @@ public class Main {
 
         //task 6
         int passengers = 74;
-        if (passengers < 60) {
+        int sdadingPlaces = 60;
+        int totalPlaces = 102;
+        if (passengers < sdadingPlaces) {
             System.out.println("есть сидячие места");
-        } else if (passengers < 102) {
+        } else if (passengers < totalPlaces) {
             System.out.println("есть стоячие места " + passengers + " ");
         } else {
             System.out.println("мест нет ");
@@ -61,10 +63,10 @@ public class Main {
         int three = 3;
         if (one > two && one > three) {
             System.out.println("one максимум ");
-        } else if (two > three) {
+        } else if (two > three && two > one) {
             System.out.println("two максимум ");
-            System.out.println("three максимум ");
+        } else if (three > one && three > two) {
+            System.out.println("three максимум");
         }
-
     }
 }
